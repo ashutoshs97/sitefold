@@ -426,8 +426,11 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 .chatbot-header { background: var(--color-accent-dark); color: #FFF; padding: 16px; display: flex; justify-content: space-between; align-items: center; }
 .chatbot-header h4 { color: #FFF; font-size: 1rem; margin: 0; }
 .chatbot-header button { background: none; border: none; color: #FFF; font-size: 1.5rem; cursor: pointer; }
-.chatbot-body { padding: 24px 16px; min-height: 150px; }
-.chat-message.received { background: var(--color-bg-alt); padding: 12px; border-radius: 12px; border-bottom-left-radius: 2px; font-size: 0.95rem; display: inline-block; }
+.chatbot-body { padding: 24px 16px; min-height: 150px; max-height: 350px; overflow-y: auto; display: flex; flex-direction: column; }
+.chat-message.received { background: var(--color-bg-alt); padding: 12px; border-radius: 12px; border-bottom-left-radius: 2px; font-size: 0.95rem; display: inline-block; max-width: 85%; margin-bottom: 8px; }
+.chat-message.sent { background: var(--color-accent-dark); color: #FFF; padding: 12px; border-radius: 12px; border-bottom-right-radius: 2px; font-size: 0.95rem; display: inline-block; max-width: 85%; margin-bottom: 8px; align-self: flex-end; }
+.chat-opt-btn { font-size: 0.85rem; padding: 10px 14px; text-align: left; border: 1px solid var(--color-border); border-radius: var(--radius-full); background: var(--color-card-bg); color: var(--color-text-primary); cursor: pointer; transition: all 0.2s ease; font-weight: 500; }
+.chat-opt-btn:hover { background: var(--color-bg-alt); }
 .chatbot-footer { padding: 16px; border-top: 1px solid var(--color-border); }
 
 /* Footer */

@@ -140,13 +140,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 10. Floating Chatbot Toggle
+  // 10. Floating Chatbot Toggle & Interactions
   const chatTrigger = document.getElementById('chatbot-trigger');
   const chatContainer = document.getElementById('chatbot-container');
   const closeChat = document.getElementById('close-chatbot');
   
   chatTrigger.addEventListener('click', () => chatContainer.classList.add('open'));
   closeChat.addEventListener('click', () => chatContainer.classList.remove('open'));
+
+  const chatOptions = document.querySelectorAll('.chat-opt-btn');
+  const chatBody = document.getElementById('chatbot-body');
+  const chatFooter = document.getElementById('chatbot-footer');
+  const chatOptionsContainer = document.getElementById('chat-options');
+
+  chatOptions.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const userText = e.target.getAttribute('data-reply');
+      
+      // Hide options
+      chatOptionsContainer.style.display = 'none';
+      
+      // Add user message
+      const userMsg = document.createElement('div');
+      userMsg.className = 'chat-message sent';
+      userMsg.innerText = userText;
+      chatBody.appendChild(userMsg);
+
+      // Simulate typing delay
+      setTimeout(() => {
+        const botReply = document.createElement('div');
+        botReply.className = 'chat-message received';
+        if (userText === "Just looking around") {
+          botReply.innerText = "No problem! Take your time exploring our portfolio. If you have any questions later, we're just a click away.";
+        } else {
+          botReply.innerText = "Awesome! We'd love to help you with that. Let's hop on a quick WhatsApp chat to discuss your goals.";
+          chatFooter.style.display = 'block'; // Show WhatsApp button
+        }
+        chatBody.appendChild(botReply);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }, 600);
+    });
+  });
 
   // 11. Form Real-time Validation & Confetti
   const contactForm = document.getElementById('main-contact-form');

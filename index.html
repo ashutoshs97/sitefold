@@ -469,15 +469,20 @@
       <h4>Chat with Sitefold Studio</h4>
       <button id="close-chatbot">×</button>
     </div>
-    <div class="chatbot-body">
-      <div class="chat-message received">Hey there 👋 Looking to get a new website sorted? Let me know what you need.</div>
+    <div class="chatbot-body" id="chatbot-body">
+      <div class="chat-message received">Hey there 👋 How can we help your business today?</div>
+      <div class="chat-options" id="chat-options" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+        <button class="chat-opt-btn" data-reply="I need a new website">I need a new website</button>
+        <button class="chat-opt-btn" data-reply="I want to redesign my site">I want to redesign my site</button>
+        <button class="chat-opt-btn" data-reply="Just looking around">Just looking around</button>
+      </div>
     </div>
-    <div class="chatbot-footer">
+    <div class="chatbot-footer" id="chatbot-footer" style="display: none;">
       <a href="https://wa.me/919354891769" target="_blank" class="btn btn-success" style="width:100%; border-radius: 8px;">Continue on WhatsApp</a>
     </div>
   </div>
 
-  <button class="chatbot-trigger magnetic" id="chatbot-trigger">
+  <button class="chatbot-trigger" id="chatbot-trigger">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
   </button>
 

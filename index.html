@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitefold Studio | Websites that help businesses get enquiries</title>
+  <meta name="description" content="We create professional websites for businesses that help customers understand services, build trust, and contact easily through WhatsApp, calls, forms, or bookings.">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico">
+  
+  <!-- Third-party Scripts -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+  
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- 1. Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <img src="Logos/Untitled%20-%20June%2012,%202026%20at%2001.28.36.svg" alt="Sitefold Studio" style="height: 32px; width: auto; vertical-align: middle;">
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Get Free Website Audit</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <h1>Professional websites that help businesses get more enquiries.</h1>
+        <p>We build clean, mobile-friendly websites with <span class="typed-text"></span> — so customers can trust your business and contact you easily.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary magnetic">Get Free Website Audit</a>
+          <a href="#work" class="btn btn-secondary magnetic">View Demo Websites</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual parallax" data-speed="0.15">
+        <div class="browser-mockup">
+          <div class="browser-header">
+            <div class="browser-dot"></div>
+            <div class="browser-dot"></div>
+            <div class="browser-dot"></div>
+          </div>
+          <div class="browser-body skeleton">
+            <video autoplay loop muted playsinline src="https://cdn.dribbble.com/uploads/39417/original/49dbf46eae15d227fc95a69cee31251e.mp4?1657824906"></video>
+          </div>
+        </div>
+        
+        <div class="floating-card fc-1 glass-effect">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>WhatsApp Enquiry</span>
+        </div>
+        <div class="floating-card fc-2 glass-effect">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <span>Booking Form</span>
+        </div>
+        <div class="floating-card fc-3 glass-effect">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Google Maps</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Trust Strip & Animated Counters -->
+  <div class="trust-strip">
+    <div class="container trust-content reveal">
+      <span>Built for clinics</span><span class="trust-dot">•</span>
+      <span>coaching institutes</span><span class="trust-dot">•</span>
+      <span>cafes</span><span class="trust-dot">•</span>
+      <span>architects</span><span class="trust-dot">•</span>
+      <span>consultants</span><span class="trust-dot">•</span>
+      <span>service businesses</span>
+    </div>
+    <div class="container counters-grid reveal">
+      <div class="counter-item">
+        <h3 class="counter" data-target="150">0</h3>
+        <p>Websites Built</p>
+      </div>
+      <div class="counter-item">
+        <h3 class="counter" data-target="99">0</h3>
+        <p>% Satisfaction</p>
+      </div>
+      <div class="counter-item">
+        <h3 class="counter" data-target="24">0</h3>
+        <p>Hr Support</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h2>Everything your business website needs to convert visitors into enquiries.</h2>
+        <p>From first impression to final contact, we create websites that make your business easy to understand and easy to reach.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal" style="transition-delay: 0.1s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3>Business Website Design</h3>
+          <p>Clean and professional websites that make your business look trustworthy.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay: 0.2s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          </div>
+          <h3>Mobile-Friendly Pages</h3>
+          <p>Pages that work smoothly across mobile, tablet, and desktop.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay: 0.3s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <h3>WhatsApp & Call Enquiry Setup</h3>
+          <p>Make it easy for customers to contact you directly.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay: 0.4s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+          <h3>Booking / Contact Forms</h3>
+          <p>Capture appointments, enquiries, and service requests.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay: 0.5s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h3>Google Maps & Reviews Section</h3>
+          <p>Show location, credibility, and customer trust signals.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay: 0.6s;">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+          </div>
+          <h3>Basic Search & Launch Support</h3>
+          <p>Set up the essentials needed to launch your website properly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Sample Website Concepts -->
+  <section class="section section-bg-alt" id="work">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h2>Sample website concepts we can build for your business.</h2>
+        <p>These demo builds show the kind of professional websites we can create for different business categories.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal" style="transition-delay: 0.1s;">
+          <div class="portfolio-label">Demo Concept</div>
+          <div class="portfolio-browser pb-1 skeleton"></div>
+          <div class="portfolio-content">
+            <h3>CarePlus Clinic</h3>
+            <p class="text-muted">A professional clinic website designed for appointment enquiries.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" style="transition-delay: 0.2s;">
+          <div class="portfolio-label">Demo Concept</div>
+          <div class="portfolio-browser pb-2 skeleton"></div>
+          <div class="portfolio-content">
+            <h3>Northline Academy</h3>
+            <p class="text-muted">A conversion-focused website for admissions and demo class bookings.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" style="transition-delay: 0.3s;">
+          <div class="portfolio-label">Demo Concept</div>
+          <div class="portfolio-browser pb-3 skeleton"></div>
+          <div class="portfolio-content">
+            <h3>Arco Studio</h3>
+            <p class="text-muted">A visual portfolio website for high-trust project enquiries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Interactive Before / After Slider -->
+  <section class="section">
+    <div class="container reveal">
+      <div class="section-header text-center">
+        <h2>From outdated online presence to a website that builds trust.</h2>
+        <p>Drag the slider to see the difference a clear, professional website makes.</p>
+      </div>
+
+      <div class="ba-slider-container">
+        <!-- After image (background) -->
+        <div class="ba-image after-img">
+          <div class="ba-overlay-card after">
+            <div class="ba-title"><span>After</span> Sitefold Studio</div>
+            <ul class="ba-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Professional website</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Clear service pages</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> WhatsApp buttons</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Before image (foreground, clipped) -->
+        <div class="ba-image before-img" id="ba-before">
+          <div class="ba-overlay-card before">
+            <div class="ba-title"><span>Before</span> Outdated Setup</div>
+            <ul class="ba-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> Only Instagram page</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No clear services</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> Hard to contact</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Slider Handle -->
+        <div class="ba-slider" id="ba-slider-handle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Carousel -->
+  <section class="section section-bg-alt">
+    <div class="container reveal">
+      <div class="section-header text-center">
+        <h2>What businesses are saying.</h2>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="testimonial-card">
+            <p>"Sitefold Studio transformed our clinic's online presence. We now get appointment bookings directly from the site!"</p>
+            <h4>- Dr. Sharma, CarePlus</h4>
+          </div>
+          <div class="testimonial-card">
+            <p>"The WhatsApp integration was a game changer for our cafe. Customers easily browse our menu and order via chat."</p>
+            <h4>- Arjun, Bean & Table</h4>
+          </div>
+          <div class="testimonial-card">
+            <p>"Professional, fast, and incredibly reliable. Our new construction portfolio builds trust with every visitor."</p>
+            <h4>- Raj, BuildCore Projects</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Process Section -->
+  <section class="section" id="process">
+    <div class="container reveal">
+      <div class="section-header text-center">
+        <h2>A simple process from idea to launch.</h2>
+        <p>We keep the process clear, practical, and focused on getting your business online properly.</p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Free Website Audit</h3>
+          <p class="text-muted">We review your current presence and suggest improvements.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>Planning</h3>
+          <p class="text-muted">We understand your business and enquiry goals.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Build</h3>
+          <p class="text-muted">We create the website pages and contact flow.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3>Launch</h3>
+          <p class="text-muted">We test everything and help you go live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Solutions Section -->
+  <section class="section section-bg-alt" id="solutions">
+    <div class="container reveal">
+      <div class="section-header text-center">
+        <h2>Choose the right website solution.</h2>
+      </div>
+
+      <div class="solutions-grid">
+        <div class="solution-card">
+          <h3>Starter Website</h3>
+          <p class="text-muted">For businesses that need a simple professional online presence.</p>
+          <a href="#contact" class="btn btn-secondary magnetic" style="margin-top:auto;">Discuss This Solution</a>
+        </div>
+
+        <div class="solution-card featured">
+          <div class="featured-label">Most Popular</div>
+          <h3>Business Website</h3>
+          <p class="text-muted">For growing businesses that need more trust and customer enquiries.</p>
+          <a href="#contact" class="btn btn-primary magnetic" style="margin-top:auto;">Discuss This Solution</a>
+        </div>
+
+        <div class="solution-card">
+          <h3>Website + Enquiry System</h3>
+          <p class="text-muted">For businesses that want a proper customer enquiry flow.</p>
+          <a href="#contact" class="btn btn-secondary magnetic" style="margin-top:auto;">Discuss This Solution</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Contact Section with Formspree -->
+  <section class="section" id="contact">
+    <div class="container reveal">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Tell us about your business.</h2>
+          <p class="text-muted" style="margin-bottom: 32px;">Share a few details and we'll suggest the right structure.</p>
+          
+          <div class="contact-item">
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+            <div>
+              <div style="font-weight: 600;">WhatsApp</div>
+              <div class="text-muted" style="font-size: 0.9rem;">+91 93548 91769</div>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+            <div>
+              <div style="font-weight: 600;">Email</div>
+              <div class="text-muted" style="font-size: 0.9rem;">sitefoldstudio@proton.me</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Formspree Integration -->
+        <form class="contact-form" id="main-contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control required-field" placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business Name</label>
+            <input type="text" name="business" class="form-control required-field" placeholder="Brand name">
+          </div>
+          <div class="form-group full">
+            <label class="form-label">Message</label>
+            <textarea name="message" class="form-control required-field" placeholder="Tell us a bit more about your goals..."></textarea>
+          </div>
+          <div class="form-group full" style="margin-top: 16px;">
+            <button type="submit" class="btn btn-primary magnetic" style="width: 100%;">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot / Floating Quick Contact UI -->
+  <div class="chatbot-container glass-effect" id="chatbot-container">
+    <div class="chatbot-header">
+      <h4>Chat with Sitefold Studio</h4>
+      <button id="close-chatbot">×</button>
+    </div>
+    <div class="chatbot-body">
+      <div class="chat-message received">Hi! I'm here to help you get started. What kind of website are you looking for?</div>
+    </div>
+    <div class="chatbot-footer">
+      <a href="https://wa.me/919354891769" target="_blank" class="btn btn-success" style="width:100%; border-radius: 8px;">Continue on WhatsApp</a>
+    </div>
+  </div>
+
+  <button class="chatbot-trigger magnetic" id="chatbot-trigger">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+  </button>
+
+  <!-- 11. Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="Logos/Untitled%20-%20June%2012,%202026%20at%2001.28.36.svg" alt="Sitefold Studio" style="height: 32px; width: auto; vertical-align: middle;">
+          </div>
+          <p class="text-muted">Websites that help businesses get enquiries.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/919354891769" target="_blank">WhatsApp</a></li>
+            <li><a href="mailto:sitefoldstudio@proton.me">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

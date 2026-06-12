@@ -316,15 +316,15 @@ p { color: var(--color-text-secondary); font-size: clamp(1rem, 1.5vw, 1.125rem);
 .portfolio-card { position: relative; border-radius: var(--radius-lg); overflow: hidden; background: var(--color-card-bg); backdrop-filter: blur(24px); border: 1px solid var(--color-border); transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 8px 32px rgba(0,0,0,0.04); }
 .portfolio-card:hover { box-shadow: 0 24px 48px rgba(37, 99, 235, 0.12); transform: translateY(-8px) scale(1.02); border-color: rgba(255, 255, 255, 0.8); }
 .portfolio-browser { height: 240px; border-bottom: 1px solid var(--color-border); background-size: cover; background-position: top; }
-.pb-1 { background-image: url('https://image.thum.io/get/width/600/crop/800/https://html5up.net/uploads/demos/spectral/'); }
-.pb-2 { background-image: url('https://image.thum.io/get/width/600/crop/800/https://html5up.net/uploads/demos/solid-state/'); }
-.pb-3 { background-image: url('https://image.thum.io/get/width/600/crop/800/https://html5up.net/uploads/demos/story/'); }
-.pb-4 { background-image: url('https://image.thum.io/get/width/600/crop/800/https://html5up.net/uploads/demos/lens/'); }
-.pb-5 { background-image: url('https://image.thum.io/get/width/600/crop/800/https://html5up.net/uploads/demos/strata/'); }
-.pb-6 { background-image: url('https://image.thum.io/get/width/600/crop/800/https://html5up.net/uploads/demos/forty/'); }
-.pb-7 { background-image: url('https://image.thum.io/get/width/600/crop/800/https://html5up.net/uploads/demos/phantom/'); }
-.pb-8 { background-image: url('https://image.thum.io/get/width/600/crop/800/https://html5up.net/uploads/demos/massively/'); }
-.pb-9 { background-image: url('https://image.thum.io/get/width/600/crop/800/https://html5up.net/uploads/demos/stellar/'); }
+.pb-1 { background-image: url('assets/portfolio/portfolio_dental.png'); }
+.pb-2 { background-image: url('assets/portfolio/portfolio_academy.png'); }
+.pb-3 { background-image: url('assets/portfolio/portfolio_architecture.png'); }
+.pb-4 { background-image: url('assets/portfolio/portfolio_cafe.png'); }
+.pb-5 { background-image: url('assets/portfolio/portfolio_design.png'); }
+.pb-6 { background-image: url('assets/portfolio/portfolio_finance.png'); }
+.pb-7 { background-image: url('assets/portfolio/portfolio_legal.png'); }
+.pb-8 { background-image: url('assets/portfolio/portfolio_automotive.png'); }
+.pb-9 { background-image: url('assets/portfolio/portfolio_wellness.png'); }
 .portfolio-label { position: absolute; top: 12px; right: 12px; background: rgba(255, 255, 255, 0.9); padding: 4px 12px; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 600; border: 1px solid var(--color-border); z-index: 2; }
 .portfolio-content { padding: var(--space-lg); }
 
